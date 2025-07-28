@@ -1,0 +1,40 @@
+.footer{
+  background-color:#EFFAFD;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    line-height:1;
+    background-image: url('footerimg.jpg');
+
+
+}
+.row{
+  padding:0 80px;
+}
+.footer h5 {
+  color:bisque; 
+  padding : 20px 0;
+}
+.footer p{
+    color: whitesmoke;
+}
+.footer .icon {
+    font-size: 20px;
+  }
+  
+  .footer .icon > * {
+    margin-right: 10px; 
+    color: #fff; 
+  }
+  
+  .footer .icon > *:last-child {
+    margin-right: 0; 
+  }
+
+  .footer .icon > *:hover {
+  color:burlywood;
+}
+
+.footer p:hover {
+  color:burlywood;
+}

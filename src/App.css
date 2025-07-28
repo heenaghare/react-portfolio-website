@@ -1,0 +1,36 @@
+/* Update colors in your App.css file */
+
+/* Set a background color for the entire app */
+body {
+  background-color: #FFF4FF; /* Light grey background */
+}
+
+/* Style the header with a background color */
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+}
+
+/* Apply a different color to links */
+.App-link {
+  color: #ff6347; /* Tomato color for links */
+}
+
+/* Add a background color and border-radius to the App-logo element */
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  background-color: orangered; /* Orange background */
+  border-radius: 50%; /* Rounded shape */
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+  }

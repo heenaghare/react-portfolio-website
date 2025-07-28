@@ -1,0 +1,150 @@
+.home {
+  color: #274b66;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  position: relative;
+  padding: 0px 0px;
+  margin: 0;
+  min-height: 100vh;
+  scroll-margin-top: 120px;
+  background-color: #f9f9f9;
+}
+
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.home-text {
+  flex: 1;
+  padding: 20px;
+  min-width: 300px;
+  text-align: left;
+}
+
+.home-image {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.text-1 {
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: crimson;
+}
+
+.text-2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: crimson;
+  border: 2px solid crimson;
+  text-decoration: none;
+}
+
+.cta-button.secondary:hover {
+  background-color: crimson;
+  color: white;
+}
+
+/* Tablet Devices */
+@media (max-width: 992px) {
+  .text-1 {
+    font-size: 2.2rem;
+  }
+
+  .text-2 {
+    font-size: 1.6rem;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .home-text {
+    text-align: center;
+  }
+
+  .text-1 {
+    font-size: 2rem;
+  }
+
+  .text-2 {
+    font-size: 1.4rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .home-image img {
+    max-width: 250px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}

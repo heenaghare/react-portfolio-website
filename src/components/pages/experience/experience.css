@@ -1,0 +1,92 @@
+.card {
+  border: 2px solid greenyellow;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-panel {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 100px auto; /* Center the panel */
+  padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row; /* Ensure buttons are horizontal */
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 5px 15px; /* Reduced padding */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  border-radius: 5px;
+  flex: 1; /* Allow buttons to grow evenly */
+  margin: 0 5px; /* Add margin between buttons */
+  font-size: 1em; /* Set base font size */
+}
+
+.tabs button.active {
+  color: white;
+  background-color: #007bff; /* Change background color for active tab */
+}
+
+h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+p {
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .tab-panel {
+    margin: 50px 20px; /* Adjust margin on smaller screens */
+  }
+
+  .tabs {
+    flex-wrap: nowrap; /* Prevent wrapping for buttons */
+  }
+
+  .tabs button {
+    margin: 0 5px; /* Maintain spacing between buttons */
+    min-width: 80px; /* Set a minimum width for buttons */
+    font-size: 0.5em; /* Slightly smaller font size for mobile */
+  }
+
+  .card {
+    margin-bottom: 10px; /* Reduce margin for cards on small screens */
+    padding: 10px; /* Reduce padding for cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs button {
+    padding: 4px 10px; /* Further reduce button padding */
+    font-size: 0.8em; /* Smaller font size for very small screens */
+  }
+
+  h4 {
+    font-size: 1.2em; /* Smaller headings for mobile */
+  }
+
+  p {
+    font-size: 0.9em; /* Smaller text for better readability */
+  }
+}

@@ -1,0 +1,138 @@
+.contact {
+  padding: 40px 0; /* Reduced vertical padding */
+}
+
+.max-width {
+  margin: 0 auto;
+  padding: 0 10px; /* Reduced horizontal padding */
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.column {
+  flex: 1;
+  padding: 0 10px; /* Reduced padding for columns */
+  min-width: 280px; /* Ensure columns don't get too narrow */
+}
+.get {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* optional for vertical centering */
+  text-align: center;
+  flex: 1;
+  color:black;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px; /* Reduced margin */
+  color: #333;
+  text-align: center;
+}
+
+.icons {
+  width: 100%; /* Ensure icons section takes full width */
+  text-align: left; /* Align icons section to the left */
+}
+
+.icons .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.icons .row i {
+  margin-right: 10px; /* Reduced margin */
+  font-size: 22px; /* Slightly smaller icon size */
+  color: #ff9a00;
+}
+
+.icons .info {
+  display: flex;
+  flex-direction: column; /* Stack title and subtitle vertically */
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+.icons .info .head {
+  font-weight: bold;
+  color: #333;
+}
+
+.icons .info .sub-title {
+  color: #777;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 10px;
+}
+
+.field {
+  margin-bottom: 10px; /* Maintain spacing */
+}
+
+.field input,
+.field textarea {
+  width: 100%; 
+  padding: 10px; /* Reduced padding */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box; 
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .column {
+    padding: 5px; /* Further reduce padding for smaller screens */
+  }
+
+  .text {
+    font-size: 1.2em; /* Slightly smaller text */
+  }
+
+  .icons .row i {
+    font-size: 20px; /* Reduce icon size */
+  }
+
+  .field input,
+  .field textarea {
+    padding: 8px; /* Adjust padding for inputs */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .button-area button {
+    padding: 8px 16px; /* Adjust button padding */
+    font-size: 14px; /* Smaller button text */
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 1em; /* Smaller text for very small screens */
+  }
+
+  .field input,
+  .field textarea {
+    font-size: 12px; /* Smaller input text */
+  }
+
+  .button-area button {
+    padding: 6px 12px; /* Further adjust button padding */
+    font-size: 12px; /* Smaller button text */
+  }
+}

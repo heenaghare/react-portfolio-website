@@ -1,0 +1,136 @@
+.slider {
+    width: 100vw;
+
+    height: 85vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url('slider2.jpg');
+}
+
+.wrapper {
+    height: 100vh;
+    transition: .5s all linear;
+    will-change: transform;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 60px;
+    border: 0;
+    cursor: pointer;
+    transition: ease .3s all;
+    outline: none;
+    color: #fff;
+}
+
+.arrows.prev {
+    left: 0;
+
+    &:hover {
+        opacity: .7;
+        left: 0px; /* Adjusted */
+    }
+
+    &::before {
+        content: '\2190'; /* Unicode left arrow */
+        font-size: 24px;
+        margin-right: 5px;
+    }
+}
+
+.arrows.next {
+    right: 0;
+
+    &:hover {
+        opacity: .7;
+        right: 0px; /* Adjusted */
+    }
+
+    &::after {
+        content: '\2192'; /* Unicode right arrow */
+        font-size: 24px;
+        margin-left: 5px;
+    }
+}
+
+.dots-container {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: auto;
+    text-align: center;
+    left: 50%;
+    bottom: 9px;
+    transform: translateX(-50%);
+    z-index: 10;
+    list-style-type: none;
+}
+
+.dots-container li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.dots-container li.active button {
+    color: #7db0b0;
+}
+
+.dots-container li button {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+.dots-container li button:hover {
+    text-decoration: none;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.each-slide {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-color: transparent;
+}
+.each-slide {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-color: transparent;
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better visibility */
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .dots-container li button {
+        font-size: 6px; /* Smaller dot size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .dots-container li button {
+        font-size: 4px; /* Even smaller for mobile */
+    }
+}
